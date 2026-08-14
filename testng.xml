@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite" verbose="1">
+    <test name="Executable Mock Contract Regression">
+        <classes>
+            <class name="com.example.automation.tests.CartTotalTest"/>
+            <class name="com.example.automation.tests.EmailConfirmationTest"/>
+            <class name="com.example.automation.api.CartApiContractTest"/>
+            <class name="com.example.automation.api.OrderApiContractTest"/>
+            <class name="com.example.automation.api.OraclePersistenceValidationTest"/>
+        </classes>
+    </test>
+
+    <test name="Future UI Regression - Disabled Until Real Environment Exists">
+        <classes>
+            <class name="com.example.automation.tests.AddProductTest"/>
+            <class name="com.example.automation.tests.RemoveProductTest"/>
+            <class name="com.example.automation.tests.CartTotalUiTest"/>
+            <class name="com.example.automation.tests.ConfirmOrderTest"/>
+            <class name="com.example.automation.regression.E2ECheckoutFlowTest"/>
+        </classes>
+    </test>
+</suite>
